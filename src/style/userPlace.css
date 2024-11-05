@@ -1,0 +1,53 @@
+#places-list {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.user-places-list {
+    text-align: left;
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+.user-place-item {
+    display: flex;
+    align-items: center; /* Center align items vertically */
+    margin-bottom: 15px; /* Space between items */
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s; /* Add hover effect */
+}
+
+.user-place-item:hover {
+    transform: scale(1.02); /* Slightly scale up on hover */
+}
+
+.user-place-image {
+    width: 100px; /* Set a fixed width */
+    height: 100px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image covers the space without stretching */
+    border-radius: 50%; /* Circular image */
+    margin-right: 15px; /* Space between image and text */
+}
+
+.user-place-details {
+    flex-grow: 1; /* Allow the details to take up remaining space */
+}
+
+.user-place-title {
+    font-size: 1.2rem; /* Font size for title */
+    margin: 0; /* Remove default margin */
+    color: #333; /* Dark color for title */
+}
+
+.place-description {
+    font-size: 0.9rem; /* Font size for description */
+    color: #666; /* Lighter color for description */
+}

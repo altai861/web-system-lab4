@@ -1,0 +1,76 @@
+/* Main form container */
+#new-place-form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Form inputs */
+#new-place-form input,
+#new-place-form textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+/* Input focus styles */
+#new-place-form input:focus,
+#new-place-form textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Textarea for description */
+#new-place-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Labels */
+#new-place-form label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Submit button */
+#new-place-form button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Button hover effect */
+#new-place-form button:hover {
+    background-color: #45a049;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 600px) {
+    #new-place-form {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+
+
+#new-place-response {
+    color: green;
+    text-align: center;
+}

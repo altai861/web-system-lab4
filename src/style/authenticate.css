@@ -1,0 +1,100 @@
+#authenticate-page {
+    display: flex;
+    height: 100vh;
+    background-color: #e0f7fa; /* Softer aquamarine */
+    font-family: 'Arial', sans-serif; /* Adding a consistent font */
+}
+
+#authenticate-page div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Added padding for better spacing */
+    background-color: #ffffff; /* White background for the forms */
+    border-radius: 10px; /* Rounded corners for the form sections */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for form sections */
+}
+
+#authenticate-page div h3 {
+    margin-bottom: 20px; /* Space between title and form */
+    color: #00796b; /* Subtle green color for headings */
+}
+
+#authenticate-page div input {
+    display: block;
+    margin: 10px 0;
+    font-size: 16px; /* Uniform font size */
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #b2dfdb; /* Light border around input fields */
+    width: 100%; /* Wider input fields */
+    box-sizing: border-box;
+    transition: 0.3s ease border-color, background-color; /* Smooth hover effects */
+}
+
+#authenticate-page div input:focus {
+    border-color: #00796b; /* Highlight border when focused */
+    outline: none; /* Removing default focus outline */
+    background-color: #f1f8e9; /* Subtle background change on focus */
+}
+
+#authenticate-page div input:hover {
+    background-color: #e0f2f1; /* Slight color change on hover */
+}
+
+#authenticate-page div button {
+    display: block;
+    font-size: 16px;
+    background-color: #80cbc4; /* Softer button color */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 20px;
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: 0.3s ease background-color, border-color, transform; /* Smooth transition */
+}
+
+#authenticate-page div button:hover {
+    background-color: #00796b; /* Darker button on hover */
+    border: 1px solid #004d40; /* Slight border on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+
+#error {
+    font-size: small;
+    color: red;
+    margin: 10px;
+    padding: 10px;
+}
+
+#success {
+    font-size: small;
+    color: green;
+    margin: 10px;
+    padding: 10px
+}
+
+
+
+#back-button {
+    position: fixed; /* Fixes the button at a specific position */
+    top: 20px; /* Adjusts the distance from the top of the viewport */
+    left: 20px; /* Adjusts the distance from the left side */
+    z-index: 1000; /* Ensures the button is above other elements */
+    background-color: #3a9b24; /* Button background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding around the text */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Cursor changes to pointer when hovering */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions for hover effects */
+}
+
+#back-button:hover {
+    background-color: #118f20; /* Darker background color on hover */
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+}

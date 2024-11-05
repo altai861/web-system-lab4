@@ -1,0 +1,63 @@
+/* Navbar user information */
+.navbar-user-info {
+    display: flex;
+    align-items: center;
+}
+
+span, h2 {
+    margin-right: 20px;
+}
+
+
+
+img.navbar-user-image {
+    width: 40px; /* Size of the image */
+    height: 40px; /* Keep it square */
+    border-radius: 50%; /* Make the image a circle */
+    margin-right: 10px; /* Space between the image and the username */
+    object-fit: cover; /* Ensure the image fits within the circle */
+    border: 2px solid #004d40; /* Optional: Add a border around the image */
+}
+
+/* Other navbar styles */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00796b;
+    padding: 10px 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+#navbar button {
+    background-color: #004d40;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+#navbar button:hover {
+    background-color: #80cbc4;
+}
+
+
+#navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+#navbar-right button {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+#home-title {
+    cursor: pointer;
+}
